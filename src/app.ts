@@ -2,6 +2,10 @@
 const express = require('express');
 const app = express();
 
+// logger
+const logger = require('./logger');
+logger.initialize();
+
 // Env
 const env_config = require("./config.ts");
 
